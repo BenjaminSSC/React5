@@ -7,7 +7,7 @@ const Home = () => {
  const [pizzas, setPizzas] = useState([])
 
  const getPizzas = async () => {
-  const res = await fetch('http://localhost:5000/api/pizzas')
+  const res = await fetch('https://api-pizza-h857.onrender.com/api/pizzas')
   const pizza = await res.json()
 
   setPizzas(pizza)
